@@ -1,1 +1,46 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Georgs quotes</title>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h1>Georg von der Vogaweide: Beste Sprüche</h1>
+      <div id="quote"></div>
+      <br />
+      <button type="button" onclick="quote()">New quote</button>
+    </div>
+
+    <script>
+      quote();
+      function quote() {
+        var quotes = [
+          "Ja du musst a bissl den Mann raushängen lassen ned dass die noch denkt, dass du ihr hinterherrennst.",
+          "Das Wichtige is jetzt, wie schaut mein Valorant aus (Georg meinte den valgrind Command auf Linux)",
+          "*Pia geht aus Georg‘s Zimmer* Oida niemand macht meine Tür zu … da wird’s bald scheppern in dem Haus!",
+          "Jetzt gibts gleich rabauka!",
+          "Scheiß Saftladen hier alter. Richtige Fische alle miteinander, wirklich! (Georg bei Fall Guys). Nicht mal deinstallieren. Ich hau des in die Kloschüssel den PC mim Spiel drinnen.",
+          "so jungs, wo ist jetzt die drecks u4?",
+          "Leben leben und leben lassen!",
+          "Ich muss genießen, weil die anderen ja nix trinken!",
+          "Wisst ihr was das Problem an intelligenten Frauen ist? Die checken sofort dass man deppad ist!",
+          "Was liegt da jetzt schon wieder am Boden die Putzfrau war doch heute da",
+          "So ein Bier fasst gerade mal 3 Schluck",
+          "Ich sags dir, der beste Anmachspruch ist: “Ein Chick in der Linken ein Chick in der Rechten”",
+          "Glaub mir! Eine Lawine ist nicht so schlimm",
+          "Ich hab auch keine rosige Zukunft vor mir",
+          "Ich sag’s euch das Leben ist ein Ponyhof",
+          "Sag mir wie proletenhaft kann man eigentlich tanzen, die zerquetscht sogar den becher",
+          "Präpotant das Ganze!",
+          "Mo: „wundert mich dass man überhaupt mit Karte zahlen kann. In linz ist das nicht möglich.<br>“Georg: „So viel Bargeld kann ich nicht mal mitnehmen“",
+          "Ich spend eh gern ich brauch nur mein Wodka Welness",
+          "Wartets kurz ich krieg grad ein Nude",
+        ];
+        const randomNumber = Math.floor(Math.random() * quotes.length);
+        console.log(randomNumber);
+        var div = document.getElementById("quote");
+        div.innerHTML = quotes[randomNumber];
+      }
+    </script>
+  </body>
+</html>
